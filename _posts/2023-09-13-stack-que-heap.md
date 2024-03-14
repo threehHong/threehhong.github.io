@@ -1,5 +1,5 @@
 ---
-title: Stack, Que, Heap
+title: Stack, Que, Heap와 자바스크립트 Event Loop
 author: threeh
 date: 2023-09-13 13:15:00 +0800
 categories: [Data Structure]
@@ -11,11 +11,7 @@ mermaid: true
 
 ### **들어가며**
 
-> Event Loop는 자바스크립트의 동작 원리를 설명하는 개념입니다.
->
-> 여기에는 Call Stack, Callback Queue, Heap이라는 용어가 등장하는데 이 용어들을 어느정도 알고 있어야 Event Loop를 더 완전하게 이해할 수 있습니다.
->
-> 이 글에서는 일반적으로 사용되는 Stack, Queue, Heap에 대한 개념과 특징 그리고 자바스크립트에서 각 개념이 어떤 의미를 가지는지에 대해 알아보겠습니다.
+> Stack, Queue, Heap에 대한 설명과 자바스크립트 Event Loop에서 각 개념이 어떤 의미를 가지는지에 대해 정리한 글입니다.
 
 <br>
 
@@ -31,8 +27,16 @@ mermaid: true
 
 ## **Stack, Queue, Heap**
 
-- 자료구조에서 선형 구조에 속하는 개념 <br>
-  (선형 구조 - 자료를 구성하는 원소들이 하나씩 일렬로 나열된 형태)
+- 자료구조에서 선형, 비선형 구조에 속하는 개념
+  - 선형 구조 <br> 
+    i. 자료를 구성하는 원소들이 하나씩 일렬로 나열된 형태로, 각 요소는 바로 앞 또는 바로 뒤에 위치한 요소와 연결된다. <br>
+    ii. ex. 배열(Array), 연결 리스트(Linked List), 스택(Stack), 큐(Queue).
+
+  <br>
+
+  - 비선형 구조 <br>
+    i. 자료를 구성하는 원소들이 계층적 또는 네트워크 형태로 연결되어 있는 형태로, 각 요소가 하나 이상의 요소와 연결될 수 있다. <br>
+    ii. ex. 트리(Tree), 그래프(Graph).
 
 <br>
 
@@ -61,7 +65,7 @@ mermaid: true
 
 <br>
 
-### 자바스크립트에서 Stack의 의미
+### 자바스크립트 Event Loop에서 Stack의 의미
 
 - 자바스크립트에서의 스택은 함수 호출과 관련된 실행 컨테스트를 관리하는데 사용된다.
 
@@ -98,7 +102,7 @@ mermaid: true
 
 <br>
 
-### 자바스크립트에서 Queue의 의미
+### 자바스크립트 Event Loop에서 Queue의 의미
 
 - JavaScript에서 Queue는 비동기 함수의 순서를 정리하는데 사용된다.
 
@@ -120,9 +124,9 @@ mermaid: true
 
 <br>
 
-### 정의
+### Heap의 정의
 
-- 데이터를 특정 순서대로 정렬하고 관리하는 구조.
+- 데이터를 특정 순서대로 정렬하고 관리하는 비선형 자료구조.
 
 - 완전 이진 트리의 일종으로 우선 순위 큐를 위하여 만들어진 자료구조.
 
@@ -131,7 +135,7 @@ mermaid: true
 
 <br>
 
-### 힙의 종류
+### Heap의 종류
 
 힙은 크게 최대 힙(Max Heap)과 최소 힙(Min Heap)으로 구분된다.
 
@@ -147,7 +151,7 @@ mermaid: true
 
 <br>
 
-### 힙의 특징
+### Heap의 특징
 
 - 우선 순위가 높은 데이터가 제거되고 반환하는 구조.
 
@@ -155,7 +159,7 @@ mermaid: true
 
 <br>
 
-### 자바스크립트에서 Heap의 의미
+### 자바스크립트 Event Loop에서 Heap의 의미
 
 - Heap에는 동적으로 생성된 객체 데이터의 주소값(참조값)이 할당되는 영역이다.
 
