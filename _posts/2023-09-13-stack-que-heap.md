@@ -3,7 +3,7 @@ title: Stack, Que, Heap와 자바스크립트 Event Loop
 author: threeh
 date: 2023-09-13 13:15:00 +0800
 categories: [Data Structure]
-tags: [Data Structure, Stack, Que, Heap, Javascript]
+tags: [Data Structure, Stack, Que, Heap, Javascript, Event Loop]
 pin: true
 math: true
 mermaid: true
