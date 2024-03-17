@@ -76,7 +76,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/logo.svg"
+avatar: "/assets/img/logo_Harden.png"
 
 # "/commons/avatar.jpg"
 
