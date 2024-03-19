@@ -243,7 +243,7 @@ mermaid: true
 
 ## Event Loop 동작 과정 예시
 
-EX1
+### EX1
 
 ```
 const foo = () => console.log("First");
