@@ -28,7 +28,8 @@ mermaid: true
 ## **Stack, Queue, Heap**
 
 - 자료구조에서 선형, 비선형 구조에 속하는 개념
-  - 선형 구조 <br> 
+
+  - 선형 구조 <br>
     i. 자료를 구성하는 원소들이 하나씩 일렬로 나열된 형태로, 각 요소는 바로 앞 또는 바로 뒤에 위치한 요소와 연결된다. <br>
     ii. ex. 배열(Array), 연결 리스트(Linked List), 스택(Stack), 큐(Queue).
 
@@ -169,6 +170,7 @@ mermaid: true
 <br>
 
 ## Event Loop
+
 자바스크립트 코드는 입력된 순서에 따라 순차적으로 출력이 되는데 어떤 함수는 순서에 맞지 않게 출력되는 경우를 볼 수 있다 보통 이런 경우는 비동기 함수 떄문인데 Event Loop를 통해 자바스크립트 코드의 동작 과정에 대해 이해해보자.
 
 ![Event_Loop](/assets/img/post/Event_Loop/Event_Loop.png)
@@ -185,7 +187,7 @@ mermaid: true
 
 ### Call Stack
 
-- 실행될 코드가 한줄 단위로 할당되고 실행되는 영역
+- 실행될 코드가 한줄 단위로 할당되고 실행된 후 제거되는 영역(할당 → 실행 → 제거) <br>
 
 - LIFO(Last In First Out) 구조로 되어 있다. <br>
   가장 마지막에 추가된 데이터가 가장 먼저 나가는 방식 or 구조. <br>
@@ -193,11 +195,17 @@ mermaid: true
 - 참고로 Call Stack의 최대 사이즈는 12만개라고 한다(Chrome 기준). <br>
   (Call Stack의 최대 사이즈를 초과할 경우 브라우저가 종료된다고 한다).
 
+- 재귀 함수의 경우 <br>
+  i. 함수가 호출될 때마다 새로운 프레임이 콜 스택에 추가된다. <br>
+  ii. 재귀 호출이 계속되면서 스택에는 여러 개의 동일한 함수 프레임이 쌓이게 된다. <br>
+  iii. 재귀 호출이 종료되고 마지막에 쌓인 프레임이 실행되고 제거되면서 Call Stack 에 쌓인 각 프레임의 역순으로 실행된다. <br>
+
 <br>
 
 ### Web API
 
 - 비동기 처리 함수를 관리하는 영역 <br>
+
   (브라우저에서는 Web API로 설명되고 Node에서는 백그라운드로 설명된다).
 
 - 비동기 처리가 이루어진다(함수 내용이 출력되지는 않는다).
@@ -318,13 +326,15 @@ func11();
 
 <br>
 
-
 ## **참고 자료**
+
 - Stack, Que, Heap
+
   - Wikipedia
   - https://www.geeksforgeeks.org/heap-data-structure/
 
 - Event Loop
+
   - https://alok-verma6597.medium.com/event-loop-in-javascript-431003755cd4
 
   - https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif
